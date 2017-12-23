@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $state) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -9,48 +9,106 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
-  // Form data for the login modal
-  $scope.loginData = {};
+  $scope.abrirUtilizando = function () {
+    $state.go('utilizando.utilizandohome');
 
-  // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
+  }
 
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
-    $scope.modal.hide();
-  };
+  $scope.abrirLiderEmMin = function () {
+    $state.go('lideremmin')
+  }
 
-  // Open the login modal
-  $scope.login = function() {
-    $scope.modal.show();
-  };
+  $scope.abrirEscolha = function () {
+    $state.go('escolha')
+  }
 
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
+  $scope.abrirFacaPazes = function () {
+    $state.go('facapazes')
+  }
 
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
+  $scope.abrirRealidade = function () {
+    $state.go('realidade')
+  }
+
+  $scope.abrirOlheParaSi = function () {
+    $state.go('olheparasi')
+  }
+
+  $scope.abrirSejaBom = function () {
+    $state.go('sejabom')
+  }
+
+  $scope.abrirRecursos = function () {
+    $state.go('recursos')
+  }
+
+  $scope.abrirIdealizadora = function () {
+    $state.go('idealizadora')
+  }
+
+
+
+  $scope.abrirOQueE = function () {
+    $state.go('oquee')
+  }
+
+  $scope.abrirOQueELideranca = function () {
+    $state.go('oqueelideranca')
+  }
+
+  $scope.abrirSabotagem = function () {
+    $state.go('sabotagem')
+  }
+
+  $scope.abrirIdealizacao = function () {
+    $state.go('idealizacao')
+  }
+
+  $scope.abrirComparacao = function () {
+    $state.go('comparacao')
+  }
+
+  $scope.abrirAutonomia = function () {
+    $state.go('autonomia')
+  }
+
+  $scope.abrirLiberdade = function () {
+    $state.go('liberdade')
+  }
+
+  $scope.abrirImpotencia = function () {
+    $state.go('impotencia')
+  }
+
+  $scope.abrirRealizacao = function () {
+    $state.go('realizacao')
+  }
+
+
+
+
+
+  $scope.abrirTempoPro = function () {
+    $state.go('tempopro')
+  }
+
+  $scope.abrirEscritaPro = function () {
+    $state.go('escritapro')
+  }
+
+  $scope.abrirRecursoPro = function () {
+    $state.go('recursopro')
+  }
+
+  $scope.abrirAtitudePro = function () {
+    $state.go('atitudepro')
+  }
+
+  $scope.abrirFocoDisciplina = function () {
+    $state.go('focodisciplina')
+  }
+
+  $scope.abrirAutoCritica = function () {
+    $state.go('autocritica')
+  }
 })
-
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});

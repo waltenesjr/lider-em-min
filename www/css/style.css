@@ -1,10 +1,104 @@
 /* Empty. Add your own CSS if you like */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .background {
-  background-image: url("../img/background.png");
-  height:100%;
+  background-image: url("../img/background.jpeg");
 }
 
 .background-menu {
   background-image: url("../img/fundo-menu.jpeg");
   background-repeat: repeat;
+}
+
+.background-utilizando {
+  background-image: url("../img/menu/bg-utilizando.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.background-atualizar {
+  background-image: url("../img/menu/bg-atualizar.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.background-seu-lider {
+  background-image: url("../img/menu/bg-seu-lider.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.background-pratique {
+  background-image: url("../img/menu/bg-pratique.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.background-videos {
+  background-image: url("../img/menu/bg-videos.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.background-literatura {
+  background-image: url("../img/menu/bg-leituras.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.background-filmes {
+  background-image: url("../img/menu/bg-filmes.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.background-ebook {
+  background-image: url("../img/menu/bg-ebook.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.background-programacao {
+  background-image: url("../img/menu/bg-programacao.png");
+  background-repeat: repeat;
+  height: 43px;
+  width: 100%;
+}
+
+.item {
+  background-color: transparent;
+}
+
+.italico {
+  font-style: italic;
+}
+
+.a-href {
+  text-decoration: underline;
+  color: blue;
+}
+
+.bar .title {
+  line-height: 55px;
+}
+
+.sanduiche-menu {
+  color: white !important;
+  padding-top: 5px !important;
+}
+
+.voltar-menu {
+  padding-top: 15px;
+  padding-left: 5px;
 }

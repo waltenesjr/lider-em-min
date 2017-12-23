@@ -25,55 +25,270 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-  .state('app', {
-    url: '/app',
-    abstract: true,
-    templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl'
-  })
+    .state('utilizando', {
+      url: '/utilizando',
+      abstract: true,
+      templateUrl: 'templates/menu-utilizando.html',
+      controller: 'AppCtrl'
+    })
 
-  .state('app.utilizando', {
-    url: '/utilizando',
+  .state('utilizando.utilizandohome', {
+    url: '/utilizandohome',
     views: {
       'menuContent': {
         templateUrl: 'templates/utilizando.html'
       }
-    }
+    },
   })
+
+    .state('lideremmin', {
+      url: '/lideremmin',
+      templateUrl: 'templates/utilizando/lider-em-min.html'
+    })
+
+    .state('escolha', {
+      url: '/escolha',
+      templateUrl: 'templates/utilizando/escolha.html'
+    })
+
+    .state('facapazes', {
+      url: '/facapazes',
+      templateUrl: 'templates/utilizando/faca-pazes.html'
+    })
+
+    .state('realidade', {
+      url: '/realidade',
+      templateUrl: 'templates/utilizando/realidade.html'
+    })
+
+    .state('olheparasi', {
+      url: '/olheparasi',
+      templateUrl: 'templates/utilizando/olha-para-si.html'
+    })
+
+    .state('sejabom', {
+      url: '/sejabom',
+      templateUrl: 'templates/utilizando/seja-bom.html'
+    })
+
+    .state('recursos', {
+      url: '/recursos',
+      templateUrl: 'templates/utilizando/recursos.html'
+    })
+
+    .state('idealizadora', {
+      url: '/idealizadora',
+      templateUrl: 'templates/utilizando/idealizadora.html'
+    })
+
+    .state('atualizar', {
+      url: '/atualizar',
+      abstract: true,
+      templateUrl: 'templates/menu-atualizar.html',
+      controller: 'AppCtrl'
+    })
+
+    .state('atualizar.atualizarhome', {
+      url: '/atualizarhome',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/atualizar.html'
+        }
+      }
+    })
+
+    .state('oquee', {
+      url: '/oquee',
+      templateUrl: 'templates/atualizar/lider-em-min.html'
+    })
+
+    .state('oqueelideranca', {
+    url: '/oqueelideranca',
+    templateUrl: 'templates/atualizar/o-que-e.html'
+  })
+
+    .state('sabotagem', {
+      url: '/sabotagem',
+      templateUrl: 'templates/atualizar/sabotagem.html'
+    })
+
+    .state('idealizacao', {
+      url: '/idealizacao',
+      templateUrl: 'templates/atualizar/idealizacao.html'
+    })
+
+    .state('comparacao', {
+      url: '/comparacao',
+      templateUrl: 'templates/atualizar/comparacao.html'
+    })
+
+    .state('autonomia', {
+      url: '/autonomia',
+      templateUrl: 'templates/atualizar/autonomia.html'
+    })
+
+    .state('liberdade', {
+      url: '/liberdade',
+      templateUrl: 'templates/atualizar/liberdade.html'
+    })
+
+    .state('impotencia', {
+      url: '/impotencia',
+      templateUrl: 'templates/atualizar/impotencia.html'
+    })
+
+    .state('realizacao', {
+      url: '/realizacao',
+      templateUrl: 'templates/atualizar/realizacao.html'
+    })
+
+    .state('seulider', {
+      url: '/seulider',
+      abstract: true,
+      templateUrl: 'templates/menu-seu-lider.html',
+      controller: 'AppCtrl'
+    })
+
+    .state('seulider.seja', {
+      url: '/seja',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/seja.html'
+        }
+      }
+    })
+
+    .state('pratique', {
+      url: '/pratique',
+      abstract: true,
+      templateUrl: 'templates/menu-pratique.html',
+      controller: 'AppCtrl'
+    })
+
+    .state('pratique.pratiquehome', {
+      url: '/pratiquehome',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/pratique.html'
+        }
+      }
+    })
+
+    .state('tempopro', {
+      url: '/tempopro',
+      templateUrl: 'templates/pratique/tempo-pro.html'
+    })
+
+    .state('escritapro', {
+      url: '/escritapro',
+      templateUrl: 'templates/pratique/escrita-pro.html'
+    })
+
+    .state('recursopro', {
+      url: '/recursopro',
+      templateUrl: 'templates/pratique/recurso-pro.html'
+    })
+
+    .state('atitudepro', {
+      url: '/atitudepro',
+      templateUrl: 'templates/pratique/atitude.html'
+    })
+
+    .state('focodisciplina', {
+      url: '/focodisciplina',
+      templateUrl: 'templates/pratique/foco-disciplina.html'
+    })
+
+    .state('autocritica', {
+      url: '/autocritica',
+      templateUrl: 'templates/pratique/auto-critica.html'
+    })
+
+    .state('video', {
+      url: '/video',
+      abstract: true,
+      templateUrl: 'templates/menu-video.html',
+      controller: 'AppCtrl'
+    })
+
+    .state('video.videohome', {
+      url: '/videohome',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/video.html'
+        }
+      }
+    })
+
+    .state('leitura', {
+      url: '/leitura',
+      abstract: true,
+      templateUrl: 'templates/menu-leitura.html',
+      controller: 'AppCtrl'
+    })
+
+    .state('leitura.leiturahome', {
+      url: '/leiturahome',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/leitura.html'
+        }
+      }
+    })
+
+    .state('filme', {
+      url: '/filme',
+      abstract: true,
+      templateUrl: 'templates/menu-filme.html',
+      controller: 'AppCtrl'
+    })
+
+    .state('filme.filmehome', {
+      url: '/filmehome',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/filme.html'
+        }
+      }
+    })
+
+    .state('ebook', {
+      url: '/ebook',
+      abstract: true,
+      templateUrl: 'templates/menu-ebook.html',
+      controller: 'AppCtrl'
+    })
+
+    .state('ebook.ebookhome', {
+      url: '/ebookhome',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/ebook.html'
+        }
+      }
+    })
+
+    .state('programacao', {
+      url: '/programacao',
+      abstract: true,
+      templateUrl: 'templates/menu-programacao.html',
+      controller: 'AppCtrl'
+    })
+
+    .state('programacao.programacaohome', {
+      url: '/programacaohome',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/programacao.html'
+        }
+      }
+    })
 
     .state('init', {
       url: '/init',
-      templateUrl: 'templates/init.html'
-    })
-
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-
-  .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
-
-  .state('app.single', {
-    url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  });
+      templateUrl: 'templates/init.html',
+      controller: 'AppCtrl'
+    });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/init');
 });
