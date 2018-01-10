@@ -41,6 +41,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     },
   })
 
+    .state('inicioutilizando', {
+      url: '/inicioutilizando',
+      templateUrl: 'templates/utilizando/inicio.html'
+    })
+
     .state('lideremmin', {
       url: '/lideremmin',
       templateUrl: 'templates/utilizando/lider-em-min.html'

@@ -14,6 +14,10 @@ angular.module('starter.controllers', [])
 
   }
 
+  $scope.abrirInicioUtilizando = function () {
+    $state.go('inicioutilizando')
+  }
+
   $scope.abrirLiderEmMin = function () {
     $state.go('lideremmin')
   }
